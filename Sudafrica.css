@@ -1,0 +1,529 @@
+/*Box-Sizing, margin 0 padding 0*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*Fuente de letra*/
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+/*Sombreado encabezado*/
+header{
+    box-shadow: 5px 5px 10px gainsboro;
+    
+}
+
+main{
+    padding-top: 50px;
+}
+
+/*Caracteristicas del Nav*/
+nav{
+    z-index: 1000;
+    width: 100%;
+    background-color: rgb(26, 53, 90);
+    display: flex;
+    height: 50px;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed
+}
+
+/*Tamaño Fuente lista desordenada*/
+.lista-nav{
+    color: white;
+    font-weight: 500;
+    font-size: 15px;
+    display: flex;
+    margin-bottom: 0px;
+    padding-left: 45px;
+    gap: 130px;
+    list-style: none;
+}
+
+li a{
+    color: white;
+}
+
+/*Items del Nav (li)*/
+.items-nav{
+    display: inline-block;
+    transition: all 0.3s ease 0s;
+}
+
+/*Efecto items*/
+.items-nav:hover{
+    transform: scale(1.1);
+}
+
+/*Links*/
+a{
+    text-decoration: none;
+    color: black;
+    transition: all 0.5s ease 0 ;
+}
+
+/*Hover li a*/
+nav ul li a:hover{
+    color: rgb(184, 182, 182);
+    
+}
+
+
+
+/*Div botones*/
+.div-btn{
+    padding-right: 45px;
+}
+
+/*Botones caracteristicas*/
+.botones{
+    font-size: 14px;
+    font-weight: 500;
+    width:140px;
+    margin: 15px;
+    border-width: 1px;
+    border: none;
+    border-radius: 20px;
+    padding: 8px;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+}
+
+#registrarse{
+    background-color: rgb(255, 255, 255);
+}
+
+/*Hover botones a*/
+.botones:hover{
+    color: rgb(182, 182, 184);
+}
+
+/*Efecto boton*/
+nav div button:hover{
+    transform: scale(1.1);
+}
+
+
+/*Div Logo*/
+.centrar-logo{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0px 1px 0px gainsboro;
+    gap: 200px;
+    align-items: center;
+}
+
+/*Logo caracteristicas*/
+.logo{
+    width: 150px;
+    height: 150px;
+}
+
+/*Publicidad Macro*/
+.macro{
+height: 90px;
+}
+
+/*Div categoria y titulo de la noticia*/
+.principal{
+    margin: 20px 60px 0px 60px;
+    box-shadow: 0px 1px 0px gainsboro;
+}
+
+#categoria-noticia{
+    font-weight: 300;
+    color: black
+}
+
+/*Titulo noticia*/
+#titulo-principal{
+    text-align: left;
+    padding: 15px 0px ;
+    max-width: 1025px;
+    font-weight: 600;
+    font-size: 45px ;
+}
+
+/*Subtitulo noticia*/
+#parrafo-principal{
+    text-align: left;
+    padding: 10px 0px 20px 0px;
+    max-width: 1008px;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 40px;
+    margin-bottom: 0px;
+}
+
+#articulo2{
+    display: flex;
+    flex-direction: row;
+    height: max-content;
+    margin-top: 15px;
+}
+
+/*Div fecha e imagen de la noticia*/
+.div-2{
+    margin: 20px 0px 0px 60px;
+    box-shadow : 0px 1px 0px gainsboro;
+    height: 555px;
+    width: 900px;
+}
+
+.div-3{
+    margin: 20px 0px 20px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    height: 550px;
+}
+
+.contenedor-movistar{
+    display: flex;
+    align-items: center;
+    background-image: url(./Imagenes/fondo-rayado.jpg);
+    height: 600px;
+    width: 200px;
+}
+
+.publicidad-text{
+    text-align: center;
+    padding-top: 15px 0px;
+}
+
+.publicidad{
+    width: 200px;
+    height: 450px;
+    justify-content: center;
+    padding-top: 25px;
+}
+
+
+#fecha-principal{
+    font-size: 16px;
+    padding: 0px 0px 0px 0px;
+    font-weight: 200;
+    margin-bottom: 0px;
+}
+
+#imagen-principal{
+    width: 700px;
+    padding: 15px 0px;
+}
+
+#descripcion-imagen{
+    font-size: 16px;
+    font-weight: 200;
+    margin-bottom: 0px;
+}
+
+
+/*Desarrollo de la noticia*/
+.barra{
+display: flex;
+flex-direction: column;
+width: 70px;
+margin: 30px 10px 0px 10px ;
+align-items: center;
+background-color: white ;
+height: 380px;
+}
+
+.iconos{
+    padding: 15px 15px;
+    
+}
+
+.iconos i{
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+}
+
+.iconos i:hover{
+    transform: scale(1.2);
+}
+
+.grupo1{
+    box-shadow: 0px 1px 0px;
+}
+
+.grupo2{
+    box-shadow: 0px 1px 0px;
+}
+
+.articulo3{
+    display: flex;
+    
+}
+
+.box-twitter{
+    margin: 20px 0px
+}
+
+.div-desarrollo{
+    margin: 30px 20px 0px 20px; 
+    max-width: 900px;
+    height: max-content;
+    box-shadow: 0px 1px 0px gainsboro;
+}
+
+.p-desarrollo{
+    text-align: left;
+    font-size: 21px;
+    font-weight: 300;
+    line-height: 40px;
+    max-width: 900px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    padding: 10px 0px;
+    
+}
+
+h2{
+    padding: 10px 0px;
+}
+
+h4{
+    margin-top: 8px;
+}
+
+.lista-resultado{
+    text-align: left;
+    font-size: 21px;
+    font-weight: 300;
+    line-height: 40px;
+    max-width: 900px;
+    padding: 10px 0px 10px 20px; 
+}
+
+.boca-icono{
+width: 25px;
+margin-right: 5px;
+}
+
+.palmeiras-icono{
+    width: 25px;
+    margin-right: 5px; 
+}
+
+.formaciones{
+    width: 600px;
+}
+
+.resumen{
+    padding: 15px 0px;
+}
+
+/*-----------------------------------ASIDE--------------------------------------*/
+
+.mas-leido{
+    margin: 45px 0px 20px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+}
+
+.div-titulo-mas-leido{
+    box-shadow: 0px 1px 0px gainsboro;
+    width: 272px;
+    margin-bottom: 10px;
+}
+
+.titulo-mas-leido{
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.tarjetas-deportes{
+    margin: 20px 0px;
+    max-width: 250px;
+    background-color: white;
+    border: solid gainsboro 1px;
+    transition: all 0.3s ease 0s;
+    /*box-shadow: 4px 4px 15px gainsboro;*/
+}
+
+.tarjetas-deportes:hover{
+    transform: scale(1.1);
+}
+
+
+
+.imagen-tarjeta{
+    width: 100%;
+    
+}
+
+.p-tarjeta{
+    color: black;
+    line-height: 24px;
+    padding: 10px 10px;
+    
+}
+
+.publicidad-aside{
+    margin: 40px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    height: max-content;
+    
+}
+
+
+.box-coca-cola{
+    margin-top: 50px;
+    background-image: url(./Imagenes/fondo-rayado.jpg);
+    display: flex;
+    align-items: center;
+    height: 650px;
+}
+
+.burger{
+    width: 280px;
+    border: solid 1px gainsboro;
+}
+
+.imagen-aside{
+    justify-content: center;
+    width: 280px;
+    
+}
+
+/*CARRUSEL*/
+
+.titulos-carrusel{
+    font-family: 'Roboto';
+    opacity: 80%;
+}
+
+.carrusel-seccion{
+    margin: 10px 0px;
+}
+
+.carousel{
+    transition: all 0.3s ease 0s;
+}
+
+.carousel:hover{
+    transform: scale(1.1);  
+}
+
+.carousel-caption{
+    /*height: 260px;*/
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+}
+
+.d-block{
+    opacity: 200%;
+}
+
+.imagen-balotaje{
+    height: 309.38px;
+     
+}
+
+#otras-noticias{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.carrusel-seccion{
+    display: flex;
+    justify-content: center;
+}
+
+.carousel{
+    width: 550px;
+    margin-bottom: 40px;
+}
+
+/*Pie de pagina*/
+footer{
+    background-color: rgb(26, 53, 90);
+    height: 290px;
+    padding: 40px 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.pieletra{
+    text-align: center;
+    color: white;
+    padding: 0px 0px 12px 0px;
+}
+
+.redes{
+   gap: 40px;
+   padding: 10px 0px;
+   justify-content: center;
+   color: white;
+    font-weight: 500;
+    font-size: 15px;
+    display: flex;
+    list-style: none;
+}
+
+.box-iconos{
+    display: flex;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    border: solid 1px white;
+    border-radius: 50%;
+    transition: all 0.3s ease 0s;
+}
+
+.box-iconos li{
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease 0s;
+}
+
+.box-iconos:hover{
+    transform: scale(1.2);
+    color: rgb(140, 140, 141);
+    
+}
+
+i{
+ font-size: 20px;
+ margin: 10px;
+ transition: all 0.3s ease 0s;
+}
+
+.box-iconos li :hover{
+    color: rgb(140, 140, 141);
+}
+
+
+
+#copy{
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 0px;
+    margin-top: 8px;
+}
+
+.skoda{
+    display: flex;
+    flex-direction: column;
+}
+
+.banner-skoda{
+    height: 200px;
+    margin-bottom: 20px;
+}
+
